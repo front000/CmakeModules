@@ -56,8 +56,8 @@ foreach(lib
     ijg12
     ijg16
     ijg8
-	 oflog
-    ofstd)
+    ofstd
+    oflog)
 
   find_library(DCMTK_${lib}_LIBRARY
     ${lib}
@@ -103,7 +103,8 @@ foreach(dir
     dcmsign
     dcmsr
     dcmtls
-    ofstd)
+    ofstd
+    oflog)
   find_path(DCMTK_${dir}_INCLUDE_DIR
     ${DCMTK_${dir}_TEST_HEADER}
     PATHS
